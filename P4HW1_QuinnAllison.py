@@ -15,10 +15,10 @@ for scores in range(num_scores):
 print('---------Results---------')
 minu = min(scorelist)
 print('Lowest Score :', minu)
-newlist = scorelist.remove(minu)
-print('Modified List :', newlist)
+scorelist.remove(minu)
+print('Modified List :', scorelist)
 
-average = sum(newlist)/len(newlist)
+average = sum(scorelist)/len(scorelist)
 print('Scores Average :', average)
 
 if average <= 100 and average >= 90:
@@ -31,7 +31,7 @@ elif average <= 69 and average >= 60:
     letter = "D"        
 else:
     letter = "F"
-                        
+print('Your letter grade is', letter)      
                         
     
             
